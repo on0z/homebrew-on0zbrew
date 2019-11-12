@@ -1,8 +1,8 @@
 cask 'nowplayingitunes' do
     version '1.13'
-    sha256 '3397d0f8fba22eba4087dce56ba237b88972e32d6ad30f58aefa1e783cec041e'
+    sha256 'bf8cdbbba020e3707b5a13c97ea5b8df2477d977443ca4734fe91906a2632254'
 
-    url 'https://github.com/on0z/homebrew-on0zbrew/blob/master/Archives/NowPlaying%20iTunes.app.zip'
+    url 'https://github.com/on0z/homebrew-on0zbrew/raw/master/Archives/NowPlaying%20iTunes.app.zip'
     name 'NowPlaying iTunes'
     homepage 'https://github.com/on0z/homebrew-on0zbrew/blob/master/Archives/NowPlaying%20iTunes.md'
 
