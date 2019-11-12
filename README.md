@@ -12,7 +12,7 @@ Before install softwares, please TAP this repository.
 And, install like following.
 
 ```
-% brew install SyncWalkman
+% brew cask install SyncWalkman
 ```
 
 # Packages
