@@ -24,3 +24,7 @@ And, install like following.
 ## Very nice softwares by Others
 
  - Audacity 2.3.3
+
+## Very nice binarys by Others
+ 
+ - SayKana 1.11
