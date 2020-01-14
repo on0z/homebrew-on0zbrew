@@ -1,8 +1,12 @@
 # fork source: https://gist.githubusercontent.com/varenc/f7f0afc32af0f8062ae727e4415326c6/raw/aec6e3d4bc9a53de440411acfb932b792783a9e8/audacity.rb
 # Thanks!
 
+# Audacityがアップデートされると，releaseIdとversion, sha256の更新が必要になります．
+# sha256は，実際にファイルを落としてきてshasum -a 256 で確認しましょう．
+# releaseIdは，fosshubのページに書いてあります．Webインスペクタから探します．macOS DMGの行の，Antivirusの項です．data-file-idに指定されています．
+
 ## ---
-# Unofficial Hombrew Cask for Audacity 2.3.2 (recent 64-bit version) 
+# Unofficial Hombrew Cask for Audacity 2.3.3 (recent 64-bit version) 
 # Made entirely for fun and to demonstrate how to get around fosshub's limitations.
 
 # Problem: Audacity's binary is hosted on fosshub and they don't provide a fixed url! The seems to intentionally try to prevent "hot-linking".
