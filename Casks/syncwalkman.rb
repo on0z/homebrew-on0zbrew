@@ -1,8 +1,8 @@
 cask 'syncwalkman' do
-    version '5.1'
-    sha256 'ad9d633d7f272276468bb655f4d73e1e17d166a81f3798471ccca5496bb52a6b'
+    version '5.2'
+    sha256 'e3428c7607790ced6e992b82dcd41a434b0f0333fc54edb3b4a5f4e705c61494'
 
-    url 'https://github.com/on0z/SyncWalkman/releases/download/gui%2F5.x%2F5.1/SyncWalkman-gui.app.zip'
+    url 'https://github.com/on0z/SyncWalkman/releases/download/gui%2F5.x%2F5.2/SyncWalkman-gui.app.zip'
     name 'SyncWalkman'
     homepage 'https://github.com/on0z/SyncWalkman'
 

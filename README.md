@@ -18,7 +18,7 @@ And, install like following.
 # Packages
 
 ## made by on0z
- - syncwalkman 5.1
+ - syncwalkman 5.2
  - nowplayingitunes 1.13
 
 ## Very nice softwares by Others
