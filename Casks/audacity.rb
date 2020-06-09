@@ -2,8 +2,13 @@
 # Thanks!
 
 # Audacityがアップデートされると，releaseIdとversion, sha256の更新が必要になります．
-# sha256は，実際にファイルを落としてきてshasum -a 256 ~.dmgで確認しましょう．或いはaudacityのページにも書いてあります．(https://www.audacityteam.org/download/mac/)
-# releaseIdは，fosshubのページに書いてあります．Webインスペクタから探します．macOS DMGの行の，Antivirusの項です．data-file-idに指定されています．
+# projectページ(https://www.fosshub.com/Audacity.html)でjavascript直打ちで情報取得
+# 
+# sha256:    settings.pool.f の配列の該当のhash/sha256
+# projectId: settings.pool.p ("p"rojectId?)
+# releaseId: settings.pool.f の配列の該当のr ("r"eleaseId?)
+# filename:  settings.pool.f の該当のn ("n"ame?)
+# source:    settings.pool.c
 
 ## ---
 # Unofficial Hombrew Cask for Audacity 2.4.1 (recent 64-bit version) 
@@ -27,12 +32,12 @@ cask 'audacity' do
     fosshub_response = nil
     uri = URI("https://api.fosshub.com/download/")
     Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https') do |http|
-      request = Net::HTTP::Post.new(uri, 'Content-Type' => 'application/json', 'User-Agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36')
+      request = Net::HTTP::Post.new(uri, 'Content-Type' => 'application/json', 'User-Agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15')
       request.body = {
-        "fileName" => "audacity-macos-2.4.1.dmg",
         "projectId" => "5b7eee97e8058c20a7bbfcf4",
+        "releaseId" => "5ec64795191c681deac91d5d",
         "projectUri" => "Audacity.html",
-        "releaseId" => "5ec64795191c681deac91d5f",
+        "fileName" => "audacity-macos-2.4.1.dmg",
         "source" => "CF"
       }.to_json
 
