@@ -2,11 +2,11 @@
 # Thanks!
 
 # Audacityがアップデートされると，releaseIdとversion, sha256の更新が必要になります．
-# sha256は，実際にファイルを落としてきてshasum -a 256 で確認しましょう．
+# sha256は，実際にファイルを落としてきてshasum -a 256 ~.dmgで確認しましょう．或いはaudacityのページにも書いてあります．(https://www.audacityteam.org/download/mac/)
 # releaseIdは，fosshubのページに書いてあります．Webインスペクタから探します．macOS DMGの行の，Antivirusの項です．data-file-idに指定されています．
 
 ## ---
-# Unofficial Hombrew Cask for Audacity 2.3.3 (recent 64-bit version) 
+# Unofficial Hombrew Cask for Audacity 2.4.1 (recent 64-bit version) 
 # Made entirely for fun and to demonstrate how to get around fosshub's limitations.
 
 # Problem: Audacity's binary is hosted on fosshub and they don't provide a fixed url! The seems to intentionally try to prevent "hot-linking".
@@ -17,8 +17,8 @@ require 'json'
 require 'uri'
 
 cask 'audacity' do
-  version '2.3.3'
-  sha256 '43db4d502086257ca377326f9621a343149faac6d3334424b20a3b5caceadda8'
+  version '2.4.1'
+  sha256 '5d340b025b80eb0c3ea41ae2487a77b86527bc8fb0e058d32e37762ac3d85575'
 
   # Current official URL as proposed on http://www.audacityteam.org/download/mac/
   # must be parsed to extract temporary url embedded in iframe
@@ -29,10 +29,10 @@ cask 'audacity' do
     Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https') do |http|
       request = Net::HTTP::Post.new(uri, 'Content-Type' => 'application/json', 'User-Agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36')
       request.body = {
-        "fileName" => "audacity-macos-2.3.3.dmg",
+        "fileName" => "audacity-macos-2.4.1.dmg",
         "projectId" => "5b7eee97e8058c20a7bbfcf4",
         "projectUri" => "Audacity.html",
-        "releaseId" => "5dd7e00e1d5d8e08348e2444",
+        "releaseId" => "5ec64795191c681deac91d5f",
         "source" => "CF"
       }.to_json
 

@@ -23,7 +23,7 @@ And, install like following.
 
 ## Very nice softwares by Others
 
- - Audacity 2.3.3
+ - Audacity 2.4.1
 
 ## Very nice binarys by Others
  
