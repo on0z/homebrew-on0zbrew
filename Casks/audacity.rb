@@ -22,8 +22,8 @@ require 'json'
 require 'uri'
 
 cask 'audacity' do
-  version '2.4.1'
-  sha256 '5d340b025b80eb0c3ea41ae2487a77b86527bc8fb0e058d32e37762ac3d85575'
+  version '2.4.2'
+  sha256 '4730abe5b59d9c3dd000fde22d7037af6e6019a4305195a3e4e714f6c9f6380a'
 
   # Current official URL as proposed on http://www.audacityteam.org/download/mac/
   # must be parsed to extract temporary url embedded in iframe
@@ -35,9 +35,9 @@ cask 'audacity' do
       request = Net::HTTP::Post.new(uri, 'Content-Type' => 'application/json', 'User-Agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15')
       request.body = {
         "projectId" => "5b7eee97e8058c20a7bbfcf4",
-        "releaseId" => "5ec64795191c681deac91d5d",
+        "releaseId" => "5ef5ead9c63e265869c6d064",
         "projectUri" => "Audacity.html",
-        "fileName" => "audacity-macos-2.4.1.dmg",
+        "fileName" => "audacity-macos-2.4.2.dmg",
         "source" => "CF"
       }.to_json
 
